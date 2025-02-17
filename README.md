@@ -28,9 +28,31 @@ Modern, özelleştirilebilir ve kullanımı kolay bir Firebase Authentication pa
 
 ## Kurulum
 
+Paketi projenize eklemek için iki yol var:
+
+### 1. GitHub üzerinden kurulum (Önerilen)
+
 ```yaml
 dependencies:
-  ribra_tech_auth_template: ^0.0.1
+  ribra_tech_auth_template:
+    git:
+      url: https://github.com/ibryitiz/ribra_tech_auth_template.git
+      ref: v0.0.1  # Spesifik versiyon için
+      # veya
+      ref: main    # En son güncellemeler için
+```
+
+### 2. Local path üzerinden kurulum (Geliştirme için)
+
+```yaml
+dependencies:
+  ribra_tech_auth_template:
+    path: ../ribra_tech_auth_template
+```
+
+### Gerekli Bağımlılıklar
+```yaml
+dependencies:
   firebase_core: ^3.11.0
   firebase_auth: ^5.4.2
 ```
